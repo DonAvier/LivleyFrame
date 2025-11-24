@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST UPLOAD – Cornice AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="font-family: sans-serif; padding: 20px;">
+
+    <h1>TEST: Upload immagine (POST puro)</h1>
+    <p>Se questo funziona, il problema è JavaScript in control.html.</p>
+
+    <form action="/api/upload-image" method="POST" enctype="multipart/form-data">
+        <label>Foto:</label><br>
+        <input type="file" name="image" required><br><br>
+
+        <label>Prompt (opzionale):</label><br>
+        <input type="text" name="prompt"><br><br>
+
+        <button type="submit">INVIA (POST)</button>
+    </form>
+
+</body>
+</html>
