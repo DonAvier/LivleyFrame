@@ -1,5 +1,7 @@
-class TimeUtils:
+from datetime import datetime
 
+
+class TimeUtils:
     @staticmethod
-    def _now_iso():
+    def now_iso() -> str:
         return datetime.utcnow().isoformat()
